@@ -1,6 +1,14 @@
+import LoginButton from "./LoginButton"
+import NavSearcher from "./NavSearcher"
+import NavTitle from "./NavTitle"
+import "./styles.scss"
 const NavBar = () => {
     return (
-        <nav>navbar</nav>
+        <nav className="navbar__container">
+            <NavTitle />
+            <NavSearcher />
+            <LoginButton />
+        </nav>
     )
 }
 

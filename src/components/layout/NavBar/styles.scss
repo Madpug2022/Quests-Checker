@@ -65,4 +65,25 @@ $searchbar-color: #FFFFFF;
             border: 1px solid #DCE4E6;
         }
     }
+
+    @media (max-width: 400px) {
+        &__container {
+            width: calc(100% - 2rem);
+            padding: 5px 10px;
+        }
+
+        &__title {
+            font-size: 14px; // Reducir el tamaño de la fuente
+            margin-bottom: 5px; // Espacio adicional entre elementos
+        }
+
+        &__searchbar {
+            width: 60%; // Ampliar la barra de búsqueda para que ocupe todo el ancho
+            margin-bottom: 5px; // Espacio adicional antes de los botones
+        }
+
+        &__loginButtonContainer {
+            margin-top: 5px; // Espacio adicional después del botón de login
+        }
+    }
 }

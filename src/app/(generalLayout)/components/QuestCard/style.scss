@@ -56,6 +56,10 @@ $completed_icon: #FC47BE;
         font-weight: 700;
         color: $title-color;
         line-height: 24px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
     }
 
     &__description {

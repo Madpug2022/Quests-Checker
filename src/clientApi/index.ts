@@ -1,3 +1,4 @@
+import applyMockAdapter from "@/tests/axiosMocks/mockInit";
 import axios, { AxiosResponse } from "axios";
 
 // Inicializacion de un cliente de axios personalizado
@@ -10,6 +11,12 @@ export const QPClient = axios.create({
     timeout: 15000,
     timeoutErrorMessage: "Request timed out",
 });
+
+const useMock = true;
+
+if (useMock) {
+    applyMockAdapter(QPClient);
+}
 
 const responseBody = (response: AxiosResponse) => response.data;
 

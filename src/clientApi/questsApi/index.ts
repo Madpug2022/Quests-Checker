@@ -6,8 +6,7 @@ const QUESTS_API = {
             const response = await requests.get("/quests");
             return response;
         } catch (error) {
-            console.error("Error getting quests", error);
-            return error;
+            throw error
         }
     }
 }

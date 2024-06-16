@@ -1,8 +1,10 @@
-export default async function Home() {
+import QuestContainer from "./components/Questcontainer/QuestContainer";
+
+export default function Home() {
 
   return (
-    <div>
-
+    <div className="homepage__mainpage">
+      <QuestContainer />
     </div>
   );
 }

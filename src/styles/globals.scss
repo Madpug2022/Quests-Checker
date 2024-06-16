@@ -24,3 +24,35 @@ button {
   background-color: transparent;
   border: none;
 }
+
+/*Desactivado de scrollbar default*/
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+/*CustomScrolbar*/
+
+.custom-scrollbar {}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  display: block;
+
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #BEC9C8;
+  border-radius: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+ul {
+  list-style: none;
+}

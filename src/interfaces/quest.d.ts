@@ -1,7 +1,10 @@
+export type QuestT = "install_extension" | "submit_application" | "resolve-comment" | "save_first_company" | "add_contact"
+    | "send_linkedin_message" | "send_linkedin_connection" | "send_first_email" | "add_new_contact" | "schedule_coffee_chat" | "send_follow_up_email";
+
 export interface QuestI {
     id: string;
     user_id: string;
-    type: string;
+    type: QuestT;
     status: string;
     experience_points: number;
     due_date: string;

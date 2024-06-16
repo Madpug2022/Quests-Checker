@@ -1,0 +1,147 @@
+$shadow-color: #9747FF26;
+$title-color: #141D1D;
+$description-color: #6F7979;
+
+$install_extension_bg: #FFD6F6;
+$install_extension_icon: #FC47BE;
+
+$submit_application_bg: #FFD6F6;
+$submit_application_icon: #FC47BE;
+
+$resolve-comment_bg: #DBE1FF;
+$resolve-comment_icon: #808CD7;
+
+$save_first_company_bg: #DBE1FF;
+$save_first_company_icon: #808CD7;
+
+$schedule_coffee_chat_bg: #DDF7EC;
+$schedule_coffee_chat_icon: #2BBEB8;
+
+$completed_bg: #FFD6F6;
+$completed_icon: #FC47BE;
+
+
+.questcard {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 100px;
+    max-height: 100px;
+    width: 100%;
+    border-radius: 8px;
+    padding: 16px;
+    gap: 12px;
+    box-shadow: 0px 0px 4px 1px $shadow-color;
+    transition: background-color 0.3s ease;
+
+    &:hover .questcard__options {
+        opacity: 1;
+    }
+
+    &__iconcontainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    &__title {
+        font-size: 16px;
+        font-weight: 700;
+        color: $title-color;
+        line-height: 24px;
+    }
+
+    &__description {
+        font-size: 14px;
+        font-weight: 400;
+        color: $description-color;
+        line-height: 20px;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+
+    &__actions {
+        height: 28px;
+        width: 28px;
+        border: 1px solid $description-color;
+        margin-left: auto;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $description-color;
+    }
+
+    &__options {
+        display: flex;
+        gap: 5px;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+
+        &__icon {
+            color: $description-color;
+            height: 8px;
+            width: 8px;
+            cursor: pointer;
+        }
+    }
+}
+
+.quest-icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.icon {
+    &__install_extension {
+        background-color: $install_extension_bg;
+        color: $install_extension_icon;
+    }
+
+    &__submit_application {
+        background-color: $submit_application_bg;
+        color: $submit_application_icon;
+    }
+
+    &__resolve-comment {
+        background-color: $resolve-comment_bg;
+        color: $resolve-comment_icon;
+    }
+
+    &__save_first_company {
+        background-color: $save_first_company_bg;
+        color: $save_first_company_icon;
+    }
+
+    &__schedule_coffee_chat {
+        background-color: $schedule_coffee_chat_bg;
+        color: $schedule_coffee_chat_icon;
+    }
+
+    &__completed {
+        background-color: $completed_bg;
+        color: $completed_icon;
+    }
+}

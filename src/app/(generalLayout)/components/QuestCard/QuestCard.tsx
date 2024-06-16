@@ -80,9 +80,9 @@ const QuestDescription = ({ quest }: { quest: QuestI }) => {
         case "save_first_company":
             return <p className="questcard__description">Browse our company database for your favorite companies or new inspiration and save your first company to get started.</p>
         case "add_contact":
-            return <p className="questcard__description">You recently saved {quest.company?.name || ""}. The next step is to now save a contact who's working there to start networking with.</p>
+            return <p className="questcard__description">You recently saved {quest.company?.name || ""}. The next step is to now save a contact who s working there to start networking with.</p>
         case "send_linkedin_message":
-            return <p className="questcard__description">Send a customized LinkedIn message to reach out to your new contact. Don't worry! We'll help you with the wording.</p>
+            return <p className="questcard__description">Send a customized LinkedIn message to reach out to your new contact. Dont worry! We will help you with the wording.</p>
         case "send_linkedin_connection":
             return <p className="questcard__description">Send an invitation with a tailored message to your new contact. Our AI will help you!</p>
         case "send_first_email":
